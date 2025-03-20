@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Location Tracker</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <main>
+        <!-- Map Container -->
+        <div id="map"></div>
+
+        <!-- Floating Info Box Below Marker -->
+        <div id="info-box">Latitude: -- | Longitude: -- | Speed: -- m/s</div>
+
+        <!-- Buttons at Bottom Center -->
+        <div id="controls">
+            <button id="recenter-btn">🔄 Recenter</button>
+            <button id="share-btn">📍 Share Location</button>
+        </div>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    
+    <!-- Socket.io -->
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

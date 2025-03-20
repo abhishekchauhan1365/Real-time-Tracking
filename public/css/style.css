@@ -1,0 +1,57 @@
+/* Reset Defaults */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Full-Screen Map */
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Buttons Container - Bottom Center */
+#controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Floating Info Box Below the Marker */
+#info-box {
+    position: absolute;
+    bottom: 80px; /* Adjusted so it doesn’t overlap buttons */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
